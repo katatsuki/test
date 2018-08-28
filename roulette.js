@@ -216,6 +216,7 @@ function fnRotateRoulette(type) {
         location.href = gp.Http.Login + "/Home/LogIn?ReturnUrl=" + escape(document.location.href);
     }
     else if (result.ReturnCode == -200) {
+	    result.ReturnCode = 0;
         /*statusRoulette = "N";
 
         if (type == 3) {
