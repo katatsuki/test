@@ -216,14 +216,14 @@ function fnRotateRoulette(type) {
         location.href = gp.Http.Login + "/Home/LogIn?ReturnUrl=" + escape(document.location.href);
     }
     else if (result.ReturnCode == -200) {
-        statusRoulette = "N";
+        /*statusRoulette = "N";
 
         if (type == 3) {
             alert(gp.Localization.BULK2790);
         }
         else if (confirm(gp.Localization.BULK2785)) {
             window.open(gp.Http.Shop_MU, "_blank")
-        }
+        }*/
     }
     else if (result.ReturnCode == -300) {
         alert("errorCode : -300");
